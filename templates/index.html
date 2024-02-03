@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style/index.css">
+    <script src="../static/src/index.js"></script>
+</head>
+<body>
+    <main id="main">
+      {% if usuario_logado %}
+      <h1>Bem vindo Usuários</h1>
+      {% else %}
+      <h1>tente Novamente</h1>
+      {% endif %}
+      {% for name in login:%}
+      <h1>{{name}}</h1>
+      {%endfor%}
+<h1>Pagina principal</h1>
+<h2>Welcome to the principal page</h2>
+<a href="/secondPage" target="_blank" rel="noopener noreferrer"><button>Go to another page</button></a>
+
+<h1>Cadastrar</h1>
+
+<label for="Nome">Nome</label>
+<input type="text" id="Nome">
+<label for="senha">senha</label>
+<input type="password" id="senha">
+
+ <a href="/secondPage" target="_blank" rel="noopener noreferrer"><button>enviar</button></a>
+
+</main>
+    
+</body>
+</html>
